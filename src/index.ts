@@ -9,13 +9,13 @@ class Auto {
     paramMarca: string,
     paramModelo: string,
     paramTipo: string,
-    EstaEncendido: boolean,
+    estaEncendido: boolean,
     velocidadInicial: number
   ) {
     this.marca = paramMarca;
     this.modelo = paramModelo;
     this.tipo = paramTipo;
-    this.estaEncendidoApagado = EstaEncendido;
+    this.estaEncendidoApagado = estaEncendido;
     this.velocidadActual = velocidadInicial;
   }
 
@@ -43,7 +43,8 @@ class Auto {
     this.velocidadActual = this.velocidadActual - 1;
   }
 }
-class registroAutomotor {
+
+class RegistroAutomotor {
   public automovil: string;
 
   constructor(paramAutomovil: string) {
